@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio das Patroas SP | Unhas, Cílios e Sobrancelhas</title>
+<meta name="description" content="Studio das Patroas SP: unhas, cílios e sobrancelhas. Aqui, toda mulher é uma Patroa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#inicio">Ir para o conteúdo</a>
+
+<!-- CABEÇALHO: os links de menu apontam para as 3 seções (Início, Serviços, Como chegar). -->
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#inicio" aria-label="Studio das Patroas SP, início">
+      <span class="brand__t">Studio das Patroas<small>SP</small></span>
+    </a>
+    <nav id="menu" class="nav" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-chegar">Como chegar</a>
+    </nav>
+    <a class="btn btn--rose hcta" data-book target="_blank" rel="noopener noreferrer">Agendar horário</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+
+<main>
+<!-- INÍCIO: usa só o texto do perfil do Instagram. -->
+<section class="hero" id="inicio">
+  <div class="wrap hero__in">
+    <h1 class="sr">Studio das Patroas SP: unhas, cílios e sobrancelhas em Caçapava</h1>
+    <!-- Logo central: o CSS esmaece as bordas para ela se misturar ao fundo. Troque o arquivo images/logo.jpg para atualizar. -->
+    <img class="medal" src="images/logo.jpg" alt="Logo do Studio das Patroas: SP dourado com coroa" width="420" height="420">
+    <!-- Botões: WhatsApp e Instagram em ícone; os links vêm do CONFIG no script.js. -->
+    <div class="hero__btns">
+      <a class="social-btn" data-book target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.2l.8-1-1-2z" fill="currentColor"/></svg></a>
+      <a class="social-btn" data-link="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+      <a class="btn btn--line" href="#servicos">Ver serviços</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS: busca, categorias e cards são montados pelo script.js. -->
+<section class="services" id="servicos">
+  <div class="wrap">
+    <h2 class="center">Nossos serviços</h2>
+    <p class="center lead" id="lead">Escolha a categoria ou busque pelo nome do serviço.</p>
+    <div id="svc"></div>
+  </div>
+</section>
+
+<!-- COMO CHEGAR: o endereço vem do CONFIG no script.js. -->
+<section class="where" id="como-chegar">
+  <div class="wrap where__in">
+    <div>
+      <h2>Como chegar</h2>
+      <address id="addr"></address>
+      <h3 class="hrs-t">Horário de atendimento</h3>
+      <ul class="hours" id="hours"></ul>
+      <div class="where__btns">
+        <a class="btn btn--dark" data-link="maps" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>
+        <a class="btn btn--line-d" data-book target="_blank" rel="noopener noreferrer">Agendar horário</a>
+      </div>
+    </div>
+    <div class="map" id="map"></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div><strong>Studio das Patroas SP</strong><p id="fphone"></p></div>
+    <nav aria-label="Rodapé">
+      <a data-link="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a data-link="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </nav>
+  </div>
+  <!-- Crédito do desenvolvedor: sempre a última linha do rodapé. -->
+  <p class="dev">Site desenvolvido por Vinícius Fontella, telefone para contato:
+    <a class="btn btn--line dev__btn" href="https://wa.me/5512991079757" target="_blank" rel="noopener noreferrer">Entre em contato</a>
+  </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
